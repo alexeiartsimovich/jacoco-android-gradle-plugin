@@ -52,13 +52,13 @@ task sourcesJar(type: Jar) {
   from sourceSets.main.allSource
 }
 
-group = 'io.github.kevalpatel2106.gradle'
-version = '0.1.5'
+group = 'io.github.alexeiartsimovich.gradle'
+version = '0.1.6'
 
 gradlePlugin {
   plugins {
     jacocoAndroidGradlePlugin {
-      id = 'io.github.kevalpatel2106.gradle-jacoco-android'
+      id = 'io.github.alexeiartsimovich.gradle-jacoco-android'
       displayName = 'Fork of a plugin com.dicedmelon.gradle.jacoco-android for simplifying JacocoReport configuration for Android projects'
       description = 'A Gradle plugin that adds fully configured JacocoReport tasks for unit tests of each Android application and library project variant. This plugin adds support for Gradle 8.0.'
       implementationClass = 'io.github.kevalpatel2106.gradle.jacoco.android.JacocoAndroidPlugin'
@@ -67,8 +67,8 @@ gradlePlugin {
 }
 
 pluginBundle {
-  website = 'https://github.com/kevalpatel2106/jacoco-android-gradle-plugin'
-  vcsUrl = 'https://github.com/kevalpatel2106/jacoco-android-gradle-plugin'
+  website = 'https://github.com/alexeiartsimovich/jacoco-android-gradle-plugin'
+  vcsUrl = 'https://github.com/alexeiartsimovich/jacoco-android-gradle-plugin'
   tags = ['android', 'jacoco', 'testing', 'coverage', 'integrationtesting']
 
   plugins {
